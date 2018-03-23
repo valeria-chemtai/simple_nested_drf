@@ -3,9 +3,11 @@ from .models import Author, Book
 
 
 class AuthorSerializer(serializers.ModelSerializer):
+    books = serializers.StringRelatedField(many=True)
+
     class Meta:
         model = Author
-        fields = ('id', 'first_name', 'last_name')
+        fields = ('url', 'id', 'first_name', 'last_name', 'books')
 
 
 class BookSerializer(serializers.ModelSerializer):

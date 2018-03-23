@@ -10,7 +10,7 @@ class NestedDefaultRouter(NestedRouterMixin, DefaultRouter):
 
 router = NestedDefaultRouter()
 
-authors_router = router.register('authors', AuthorViewSet)
+authors_router = router.register('authors', AuthorViewSet, base_name='author')
 
 authors_router.register('books', BookViewSet, base_name='author-books',
                         parents_query_lookups=['author'])
