@@ -23,12 +23,15 @@ python manage.py runserver
 ## API Endpoints
 | URL Endpoint | HTTP Methods | Summary |
 | -------- | ------------- | --------- |
-| `/api/authors/` | `POST` | Create a new  |
-| `/api/authors/` | `GET` | Retrieve all authors |
-| `api/authors/<id>/` | `GET` |  Retrieve an author by ID|
-| `api/authors/<id>/` | `PUT` | Update an author |
-| `api/authors/<id>/` | `DELETE` | Delete an author |
-| `api/authors/<id>/books/` | `POST` |  Create books in a author |
-| `api/authors/<id>/books/<book_id>/` | `DELETE`| Delete an item in a author|
-| `api/authors/<id>/books/<book_id>/` | `PUT`| update a author item details|
+| `/api/v1/users/` | `POST` | Create a new user  |
+| `/api/v1/users/` | `GET` | Retrieve all users |
+| `/api/v1/users/<user_id>` | `GET` |  Retrieve specific user by ID|
+| `/api/v1/users/<user_id>` | `PATCH` | Update specific user info by ID |
+| `/api/v1/social_networks/` | `POST` | Create a new social_network  |
+| `/api/v1/social_networks/<social_networks_id>` | `GET` |  Retrieve specific social_network by ID|
+| `/api/v1/social_networks/social_networks_id>` | `PATCH` | Update specific social_networks by ID |
+| `/api/v1/hobbies/` | `POST` | Create a new hobby  |
+| `/api/v1/hobbies/` | `GET` | Retrieve all hobbies |
+| `/api/v1/hobbies/<hobby_id>` | `GET` |  Retrieve specific hobby by ID|
+| `/api/v1/hobbies/<hobby_id>` | `PATCH` | Update specific hobby info by ID |
 
